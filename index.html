@@ -6,24 +6,33 @@
 		
 		<style type="text/css">
 		body {
-			margin: auto;
+			margin: auto;background-color: gray;
+		}
+		div.line {
+			width: 100%;height: 1px;background-color: white;
 		}
 		#picture{
-			margin: 10% 70%;
+			margin: 10% 0 10% 70%;
 		}
-		#title {
-			margin-left: 0;
+		#mineDetail {
 		}
-		#title p {
-			/*background-color:red;*/padding-left: 10%;
+		#mineDetail p {
+			padding-left: 10%; color: red;
 		}
-		#class{
+		span.green {
+			color: green;
+		}	
+		span.white {
+			color: white;
+		}
 			
+		#class{
+			background-color: white;
 		}
 		
 		</style>
 		<script type="text/javascript">
-			function mineDetail() {
+			function getMineDetail() {
 				alert("13")
 			}
 			function testFunction(url) {
@@ -31,26 +40,34 @@
 			}
 		</script>
 	</head>
+	
+	
 	<body>
 		<div style="background-color: gray;">
 			<img src="img/捕获.PNG" id="picture"/>
 		</div>
-		<div id="title">
-			<p>let name = Gu Jianxing</p>
+		<div class="line">
+		</div>
+		<div id="mineDetail">
+			<p>let <span class="white">name = </span> <span class="green">Gu Jianxing </span></p>
 			<p>var age = 24</p>
 			<p>var position = Ios Developer</p>
 			<p>var hobbies = music,travel</p>	
-			<p style="padding-left: 80%;font-size: 20px;" onclick="mineDetail()">learn more</p>
+			<p style="padding-left: 80%;font-size: 20px;" onclick="getMineDetail()">learn more</p>
 		</div> 
+		
 		<div id="class">
 			<table width="100%" border="1" cellspacing="10px" style="text-align: center;" frame="void">
-				<tr>
-					<td style="width: 30%;"onclick="testFunction('testFlight.html')">TestFlight</td>
+				<tr style="width: 50%;">
+					<td onclick="testFunction('testFlight.html')">TestFlight</td>
 					<td >XCTest</td>
-					<a href="testFlight.html">  哇咔咔</a>
+					<td>单元测试</td>
 				</tr>
 				<tr>
-					<td>哈哈</td>
+					<td>支付宝SDK</td>
+					<td>UMengSDK</td>
+					<td>极光SDK</td>
+					<td>Bugly SDK</td>
 				</tr>
 			</table>
 		</div>
