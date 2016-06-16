@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+		body {
+			margin: auto;background-color: gray;
+		}
+		div.line {
+			width: 100%;height: 1px;background-color: white;
+		}
+		#picture{
+			margin: 10% 0 10% 70%;
+		}
+		#mineDetail {
+		}
+		#mineDetail p {
+			padding-left: 10%; color: red;
+		}
+		span.green {
+			color: green;
+		}	
+		span.white {
+			color: white;
+		}
+			
+		#class{
+			background-color: white;
+		}
+		
+		</style>
+		<script type="text/javascript">
+			function getMineDetail() {
+				alert("13")
+			}
+			function testFunction(url) {
+				window.location.href = url;
+			}
+		</script>
+	</head>
+	
+	
+	<body>
+		<div style="background-color: gray;">
+			<img src="img/捕获.PNG" id="picture"/>
+		</div>
+		<div class="line">
+		</div>
+		<div id="mineDetail">
+			<p>let <span class="white">name = </span> <span class="green">Gu Jianxing </span></p>
+			<p>var age = 24</p>
+			<p>var position = Ios Developer</p>
+			<p>var hobbies = music,travel</p>	
+			<p style="padding-left: 80%;font-size: 20px;" onclick="getMineDetail()">learn more</p>
+		</div> 
+		
+		<div id="class">
+			<table width="100%" border="1" cellspacing="10px" style="text-align: center;" frame="void">
+				<tr style="width: 50%;">
+					<td onclick="testFunction('testFlight.html')">TestFlight</td>
+					<td >XCTest</td>
+					<td>单元测试</td>
+				</tr>
+				<tr>
+					<td>支付宝SDK</td>
+					<td>UMengSDK</td>
+					<td>极光SDK</td>
+					<td>Bugly SDK</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
